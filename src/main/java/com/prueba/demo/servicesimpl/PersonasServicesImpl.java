@@ -25,7 +25,7 @@ public class PersonasServicesImpl implements PersonasServices {
 
     @Override
     public List<PersonasEntity> getPersonasPorApellido(String apellido) {
-        return  personasRepository.findAllByPrimerapellido(apellido);
+        return  personasRepository.findAllByPrimerapellidoContains(apellido);
     }
 
     //@Transactional
